@@ -1,0 +1,15 @@
+package com.edu.WebShop.service;
+
+import com.edu.WebShop.api.model.CustomerDTO;
+
+import java.util.List;
+
+public interface CustomerService {
+    List<CustomerDTO> getAllCustomers();
+    CustomerDTO getCustomerById(Long id);
+    CustomerDTO createNewCustomer(CustomerDTO customerDTO);
+    CustomerDTO saveCustomerByDTO(Long id, CustomerDTO customerDTO);
+    CustomerDTO updateCustomerByDto(Long id, CustomerDTO customerDTO);
+    CustomerDTO patchCustomer(Long id, CustomerDTO customerDTO);
+    void deleteCustomerById(Long id);
+}
